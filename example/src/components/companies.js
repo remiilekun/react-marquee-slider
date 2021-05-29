@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import times from "lodash/times";
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 import { withSize } from "react-sizeme";

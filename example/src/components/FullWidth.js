@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 // ty Chris https://css-tricks.com/full-width-containers-limited-width-parents/
 const FullWidth = styled.div`

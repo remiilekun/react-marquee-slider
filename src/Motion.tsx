@@ -1,19 +1,20 @@
 import React, { useRef, useState, useEffect, ReactNode, FC } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
 const Container = styled.div<{ buffer: number; backgroundColor: string }>`
   display: flex;
-  width: ${props => props.buffer}px;
-  height: ${props => props.buffer}px;
+  width: ${(props) => props.buffer}px;
+  height: ${(props) => props.buffer}px;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.backgroundColor};
+  background-color: ${(props) => props.backgroundColor};
 `;
 
 const Space = styled.div<{ width: number; height: number }>`
   position: relative;
-  width: ${props => props.width}px;
-  height: ${props => props.height}px;
+  width: ${(props) => props.width}px;
+  height: ${(props) => props.height}px;
 `;
 
 const SolarSystem = styled.div<{
@@ -25,18 +26,18 @@ const SolarSystem = styled.div<{
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -${props => props.width / 2}px;
-  margin-top: -${props => props.width / 2}px;
-  width: ${props => props.width}px;
-  height: ${props => props.width}px;
-  animation: ${props => orbit(props.initDeg, props.direction)} linear infinite;
-  background-color: ${props => props.backgroundColor};
+  margin-left: -${(props) => props.width / 2}px;
+  margin-top: -${(props) => props.width / 2}px;
+  width: ${(props) => props.width}px;
+  height: ${(props) => props.width}px;
+  animation: ${(props) => orbit(props.initDeg, props.direction)} linear infinite;
+  background-color: ${(props) => props.backgroundColor};
 `;
 
 const Earth = styled.div<{ initDeg: number; direction: string; backgroundColor: string }>`
   display: inline-block;
-  animation: ${props => reconciliation(props.initDeg, props.direction)} linear infinite;
-  background-color: ${props => props.backgroundColor};
+  animation: ${(props) => reconciliation(props.initDeg, props.direction)} linear infinite;
+  background-color: ${(props) => props.backgroundColor};
 `;
 
 const orbit = (initDeg: number, direction: string) => keyframes`

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import get from "lodash/get";
 
 const AlertBox = styled.div`

@@ -23,7 +23,7 @@ import Marquee, {
   randomIntFromInterval, 
   randomFloatFromInterval 
 } from "react-marquee-slider";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import times from "lodash/times";
 
 const icons = [

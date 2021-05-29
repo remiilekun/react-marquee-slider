@@ -3,7 +3,7 @@ import Code from "../Code";
 
 const code = `import React from "react";
 import Marquee from "react-marquee-slider";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import times from "lodash/times";
 
 const Photo = styled.img\`

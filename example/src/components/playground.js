@@ -5,7 +5,7 @@ import Marquee, {
   randomIntFromInterval,
   randomFloatFromInterval,
 } from "react-marquee-slider";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { Slider, FormControlLabel, RadioGroup, Radio, Switch, Button } from "@material-ui/core";
 import { nanoid } from "nanoid";
 import { GithubPicker } from "react-color";

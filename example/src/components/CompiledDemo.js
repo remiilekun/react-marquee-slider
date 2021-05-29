@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import Reviews from "./Reviews";
 import Companies from "./Companies";

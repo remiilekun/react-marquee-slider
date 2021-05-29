@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Marquee from "react-marquee-slider";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import times from "lodash/times";
 import { withSize } from "react-sizeme";
 import { nanoid } from "nanoid";

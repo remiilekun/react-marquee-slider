@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import "../css/style.css";
 
@@ -23,7 +23,7 @@ const Content = styled.div`
 `;
 
 const Separator = styled.div`
-  height: ${props => props.height}px;
+  height: ${(props) => props.height}px;
 `;
 
 const IndexPage = () => (

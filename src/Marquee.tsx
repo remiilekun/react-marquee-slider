@@ -1,5 +1,6 @@
 import React, { useState, useRef, ReactNode, useEffect, FC } from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled from "@emotion/styled";
+import { keyframes, css } from "@emotion/react";
 import Child from "./Child";
 
 import { Position } from "./Types";

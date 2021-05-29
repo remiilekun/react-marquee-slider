@@ -2,7 +2,7 @@ import React from "react";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 const Container = styled.div`
   margin: 0;
